@@ -1,0 +1,84 @@
+/* mobile first  */
+
+h1 {
+    text-align: center;
+    font-size: 1.5em;
+    padding: 20px 0;
+}
+
+.container {
+    border: solid 1px #fff;
+    border-radius: 10px;
+    max-width: 70vw;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+input {
+    width: 100%;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+#Idade {
+    margin-bottom: 20px;
+}
+
+.buttonSubmit {
+    margin-bottom: 20px;
+}
+
+#resultado {
+    color: #fff;
+    text-align: center;
+    padding: 30px;
+}
+
+.textoAnimado {
+    animation: mudaCor 8s infinite ease-out;
+}
+
+@keyframes mudaCor {
+    0% {
+        color: rgb(209, 57, 196);
+    }
+
+    50% {
+        color: #ff007b;
+    }
+
+    100% {
+        color: rgb(209, 57, 196);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 50vw;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    h1 {
+        font-size: 2em;
+    }
+
+    .container {
+        width: 30vw;
+        padding: 20px;
+    }
+
+    input {
+        padding: 8px;
+        border-radius: 10px;
+    }
+}
